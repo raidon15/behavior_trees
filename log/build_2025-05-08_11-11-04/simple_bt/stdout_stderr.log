@@ -1,0 +1,113 @@
+[35m[1mConsolidate compiler generated dependencies of target bt_ros2[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o[0m
+In file included from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/home/benjamin/BT_ws/install/behaviortree_ros2/include/behaviortree_ros2/bt_action_node.hpp:20[m[K,
+                 from [01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:1[m[K:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:[m[K In member function ‘[01m[Kvirtual bool ExecuteTrajectoryAction::setGoal(control_msgs::action::FollowJointTrajectory::Goal&)[m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:23:22:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kstd::weak_ptr<rclcpp::Node>[m[K’
+   23 |     RCLCPP_INFO(node_[01;31m[K->[m[Kget_logger(), "Setting goal for /execute_trajectory");
+      |                      [01;31m[K^~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:23:22:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kstd::weak_ptr<rclcpp::Node>[m[K’
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:23:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   23 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Setting goal for /execute_trajectory");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   23 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Setting goal for /execute_trajectory");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:23:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   23 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Setting goal for /execute_trajectory");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   23 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Setting goal for /execute_trajectory");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:23:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   23 |     [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Setting goal for /execute_trajectory");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/benjamin/ros2_humble/build/rclcpp/include/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/home/benjamin/BT_ws/install/behaviortree_ros2/include/behaviortree_ros2/bt_action_node.hpp:20[m[K,
+                 from [01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:1[m[K:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:23:22:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kstd::weak_ptr<rclcpp::Node>[m[K’
+   23 |     RCLCPP_INFO(node_[01;31m[K->[m[Kget_logger(), "Setting goal for /execute_trajectory");
+      |                      [01;31m[K^~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:23:22:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kstd::weak_ptr<rclcpp::Node>[m[K’
+   23 |     RCLCPP_INFO(node_[01;31m[K->[m[Kget_logger(), "Setting goal for /execute_trajectory");
+      |                      [01;31m[K^~[m[K
+In file included from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/home/benjamin/BT_ws/install/behaviortree_ros2/include/behaviortree_ros2/bt_action_node.hpp:20[m[K,
+                 from [01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:1[m[K:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus ExecuteTrajectoryAction::onFailure(BT::ActionNodeErrorCode)[m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:43:23:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kstd::weak_ptr<rclcpp::Node>[m[K’
+   43 |     RCLCPP_ERROR(node_[01;31m[K->[m[Kget_logger(), "Error: %d", error);
+      |                       [01;31m[K^~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:43:23:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kstd::weak_ptr<rclcpp::Node>[m[K’
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:43:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   43 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Error: %d", error);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:43:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   43 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Error: %d", error);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:43:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   43 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Error: %d", error);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:43:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   43 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Error: %d", error);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:43:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   43 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Error: %d", error);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/benjamin/ros2_humble/build/rclcpp/include/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/home/benjamin/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/home/benjamin/BT_ws/install/behaviortree_ros2/include/behaviortree_ros2/bt_action_node.hpp:20[m[K,
+                 from [01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:1[m[K:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:43:23:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kstd::weak_ptr<rclcpp::Node>[m[K’
+   43 |     RCLCPP_ERROR(node_[01;31m[K->[m[Kget_logger(), "Error: %d", error);
+      |                       [01;31m[K^~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:43:23:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kstd::weak_ptr<rclcpp::Node>[m[K’
+   43 |     RCLCPP_ERROR(node_[01;31m[K->[m[Kget_logger(), "Error: %d", error);
+      |                       [01;31m[K^~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:67:16:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBT::Tree::tickRoot()[m[K’
+   67 |   [01;31m[Ktree.tickRoot()[m[K;
+      |   [01;31m[K~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/benjamin/BT_ws/install/behaviortree_ros2/include/behaviortree_ros2/bt_action_node.hpp:23[m[K,
+                 from [01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/behaviortree_cpp/bt_factory.h:191:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KBT::NodeStatus BT::Tree::tickRoot(BT::Tree::TickOption, std::chrono::milliseconds)[m[K’
+  191 |   NodeStatus [01;36m[KtickRoot[m[K(TickOption opt, std::chrono::milliseconds sleep_time);
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/behaviortree_cpp/bt_factory.h:191:14:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+gmake[2]: *** [CMakeFiles/bt_ros2.dir/build.make:76: CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

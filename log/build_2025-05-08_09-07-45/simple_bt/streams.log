@@ -1,0 +1,34 @@
+[0.044s] Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake /home/benjamin/BT_ws/src/simple_bt -DCMAKE_INSTALL_PREFIX=/home/benjamin/BT_ws/install/simple_bt
+[0.630s] -- The C compiler identification is GNU 11.4.0
+[0.813s] -- The CXX compiler identification is GNU 11.4.0
+[0.862s] -- Detecting C compiler ABI info
+[1.140s] -- Detecting C compiler ABI info - done
+[1.146s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.149s] -- Detecting C compile features
+[1.151s] -- Detecting C compile features - done
+[1.161s] -- Detecting CXX compiler ABI info
+[1.386s] -- Detecting CXX compiler ABI info - done
+[1.391s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.391s] -- Detecting CXX compile features
+[1.391s] -- Detecting CXX compile features - done
+[1.405s] -- Looking for pthread.h
+[1.701s] -- Looking for pthread.h - found
+[1.701s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.937s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.942s] -- Found Threads: TRUE  
+[1.977s] -- Configuring done
+[1.979s] -- Generating done
+[1.987s] -- Build files have been written to: /home/benjamin/BT_ws/build/simple_bt
+[1.989s] Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '0': /usr/bin/cmake /home/benjamin/BT_ws/src/simple_bt -DCMAKE_INSTALL_PREFIX=/home/benjamin/BT_ws/install/simple_bt
+[1.990s] Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20
+[2.483s] [ 33%] [32mBuilding CXX object CMakeFiles/simple_bt.dir/simple_bt.cpp.o[0m
+[2.485s] [ 66%] [32mBuilding CXX object CMakeFiles/simple_bt.dir/bt_ros2.cpp.o[0m
+[2.508s] [01m[K/home/benjamin/BT_ws/src/simple_bt/bt_ros2.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kbehaviortree_ros2/bt_action_node.hpp: No such file or directory
+[2.508s]     1 | #include [01;31m[K<behaviortree_ros2/bt_action_node.hpp>[m[K
+[2.508s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.509s] compilation terminated.
+[2.509s] gmake[2]: *** [CMakeFiles/simple_bt.dir/build.make:90: CMakeFiles/simple_bt.dir/bt_ros2.cpp.o] Error 1
+[2.509s] gmake[2]: *** Waiting for unfinished jobs....
+[4.475s] gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/simple_bt.dir/all] Error 2
+[4.475s] gmake: *** [Makefile:91: all] Error 2
+[4.477s] Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '2': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20

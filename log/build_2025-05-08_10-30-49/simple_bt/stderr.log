@@ -1,0 +1,5 @@
+/usr/bin/ld: cannot find -lbehaviortree_ros2: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/bt_ros2.dir/build.make:191: bt_ros2] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

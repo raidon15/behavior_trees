@@ -1,0 +1,4 @@
+Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake /home/benjamin/BT_ws/src/simple_bt -DCMAKE_INSTALL_PREFIX=/home/benjamin/BT_ws/install/simple_bt
+Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '0': /usr/bin/cmake /home/benjamin/BT_ws/src/simple_bt -DCMAKE_INSTALL_PREFIX=/home/benjamin/BT_ws/install/simple_bt
+Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20
+Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '2': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20

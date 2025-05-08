@@ -1,0 +1,14 @@
+/home/benjamin/BT_ws/install/actions_ros2_clients/lib/actions_ros2_clients/execute_trajectory_client
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/ament_index/resource_index/package_run_dependencies/actions_ros2_clients
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/ament_index/resource_index/parent_prefix_path/actions_ros2_clients
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/actions_ros2_clients/environment/ament_prefix_path.dsv
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/actions_ros2_clients/environment/path.dsv
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/actions_ros2_clients/local_setup.bash
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/actions_ros2_clients/local_setup.sh
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/actions_ros2_clients/local_setup.zsh
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/actions_ros2_clients/local_setup.dsv
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/actions_ros2_clients/package.dsv
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/ament_index/resource_index/packages/actions_ros2_clients
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/actions_ros2_clients/cmake/actions_ros2_clientsConfig.cmake
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/actions_ros2_clients/cmake/actions_ros2_clientsConfig-version.cmake
+/home/benjamin/BT_ws/install/actions_ros2_clients/share/actions_ros2_clients/package.xml

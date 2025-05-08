@@ -1,0 +1,46 @@
+{
+  "package_name": "btcpp_ros2_interfaces",
+  "output_dir": "/home/benjamin/BT_ws/build/btcpp_ros2_interfaces/rosidl_generator_cpp/btcpp_ros2_interfaces",
+  "template_dir": "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource",
+  "idl_tuples": [
+    "/home/benjamin/BT_ws/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces:msg/NodeStatus.idl",
+    "/home/benjamin/BT_ws/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces:action/ExecuteTree.idl",
+    "/home/benjamin/BT_ws/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces:action/Sleep.idl"
+  ],
+  "ros_interface_dependencies": [
+    "action_msgs:/home/benjamin/ros2_humble/install/action_msgs/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/home/benjamin/ros2_humble/install/action_msgs/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/home/benjamin/ros2_humble/install/action_msgs/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/home/benjamin/ros2_humble/install/action_msgs/share/action_msgs/srv/CancelGoal.idl",
+    "builtin_interfaces:/home/benjamin/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/home/benjamin/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Time.idl",
+    "unique_identifier_msgs:/home/benjamin/ros2_humble/install/unique_identifier_msgs/share/unique_identifier_msgs/msg/UUID.idl"
+  ],
+  "target_dependencies": [
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../../../local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/action__builder.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/action__struct.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/action__traits.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/idl.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/idl__builder.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/idl__struct.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/idl__traits.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/msg__builder.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/msg__struct.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/msg__traits.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
+    "/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
+    "/home/benjamin/BT_ws/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces/msg/NodeStatus.idl",
+    "/home/benjamin/BT_ws/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces/action/ExecuteTree.idl",
+    "/home/benjamin/BT_ws/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces/action/Sleep.idl",
+    "/home/benjamin/ros2_humble/install/action_msgs/share/action_msgs/msg/GoalInfo.idl",
+    "/home/benjamin/ros2_humble/install/action_msgs/share/action_msgs/msg/GoalStatus.idl",
+    "/home/benjamin/ros2_humble/install/action_msgs/share/action_msgs/msg/GoalStatusArray.idl",
+    "/home/benjamin/ros2_humble/install/action_msgs/share/action_msgs/srv/CancelGoal.idl",
+    "/home/benjamin/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Duration.idl",
+    "/home/benjamin/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Time.idl",
+    "/home/benjamin/ros2_humble/install/unique_identifier_msgs/share/unique_identifier_msgs/msg/UUID.idl"
+  ]
+}

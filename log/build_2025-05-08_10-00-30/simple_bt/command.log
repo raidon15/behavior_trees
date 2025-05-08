@@ -1,0 +1,2 @@
+Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20
+Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '2': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20

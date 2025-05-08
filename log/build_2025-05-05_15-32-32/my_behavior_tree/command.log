@@ -1,0 +1,2 @@
+Invoking command in '/home/benjamin/BT_ws/build/my_behavior_tree': /usr/bin/cmake /home/benjamin/BT_ws/src/my_behavior_tree -DCMAKE_INSTALL_PREFIX=/home/benjamin/BT_ws/install/my_behavior_tree
+Invoked command in '/home/benjamin/BT_ws/build/my_behavior_tree' returned '1': /usr/bin/cmake /home/benjamin/BT_ws/src/my_behavior_tree -DCMAKE_INSTALL_PREFIX=/home/benjamin/BT_ws/install/my_behavior_tree

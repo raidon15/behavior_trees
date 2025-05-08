@@ -1,0 +1,7 @@
+[0.060s] Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20
+[0.222s] -- Configuring done
+[0.239s] -- Generating done
+[0.246s] -- Build files have been written to: /home/benjamin/BT_ws/build/simple_bt
+[0.458s] [35m[1mConsolidate compiler generated dependencies of target simple_bt[0m
+[0.569s] [100%] Built target simple_bt
+[0.716s] Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '0': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20

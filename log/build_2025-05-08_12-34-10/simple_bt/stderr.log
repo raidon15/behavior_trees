@@ -1,0 +1,57 @@
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:8:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit_msgs[m[K’ was not declared in this scope
+    8 | class ExecuteTrajectoryAction : public BT::RosActionNode<[01;31m[Kmoveit_msgs[m[K::action::ExecuteTrajectory>
+      |                                                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:8:96:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    8 | class ExecuteTrajectoryAction : public BT::RosActionNode<moveit_msgs::action::ExecuteTrajectory[01;31m[K>[m[K
+      |                                                                                                [01;31m[K^[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:21:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit_msgs[m[K’ has not been declared
+   21 |   bool setGoal([01;31m[Kmoveit_msgs[m[K::action::ExecuteTrajectory::Goal& goal) override
+      |                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:21:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K&[m[K’ token
+   21 |   bool setGoal(moveit_msgs::action::ExecuteTrajectory::Goal[01;31m[K&[m[K goal) override
+      |                                                            [01;31m[K^[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:36:41:[m[K [01;31m[Kerror: [m[K‘[01m[KWrappedResult[m[K’ does not name a type
+   36 |   BT::NodeStatus onResultReceived(const [01;31m[KWrappedResult[m[K& wr) override
+      |                                         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:21:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool ExecuteTrajectoryAction::setGoal(int)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   21 |   bool [01;31m[KsetGoal[m[K(moveit_msgs::action::ExecuteTrajectory::Goal& goal) override
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:36:18:[m[K [01;31m[Kerror: [m[K‘[01m[KBT::NodeStatus ExecuteTrajectoryAction::onResultReceived(const int&)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   36 |   BT::NodeStatus [01;31m[KonResultReceived[m[K(const WrappedResult& wr) override
+      |                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:41:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kvirtual BT::NodeStatus ExecuteTrajectoryAction::onFailure(BT::ActionNodeErrorCode)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   41 |   virtual BT::NodeStatus [01;31m[KonFailure[m[K(BT::ActionNodeErrorCode error) override
+      |                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:[m[K In constructor ‘[01m[KExecuteTrajectoryAction::ExecuteTrajectoryAction(const string&, const NodeConfiguration&, const BT::RosNodeParams&)[m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:12:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit_msgs[m[K’ was not declared in this scope
+   12 |     : BT::RosActionNode<[01;31m[Kmoveit_msgs[m[K::action::ExecuteTrajectory>(name, config, params)
+      |                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:12:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   12 |     : BT::RosActionNode<moveit_msgs::action::ExecuteTrajectory[01;31m[K>[m[K(name, config, params)
+      |                                                               [01;31m[K^[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:12:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K([m[K’ token
+   12 |     : BT::RosActionNode<moveit_msgs::action::ExecuteTrajectory>[01;31m[K([m[Kname, config, params)
+      |                                                                [01;31m[K^[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:[m[K In member function ‘[01m[Kbool ExecuteTrajectoryAction::setGoal(int)[m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope; did you mean ‘[01m[KGoal[m[K’?
+   26 |     [01;31m[Kgoal[m[K.trajectory.joint_names = {
+      |     [01;31m[K^~~~[m[K
+      |     [32m[KGoal[m[K
+In file included from [01m[K/home/benjamin/BT_ws/install/behaviortree_ros2/include/behaviortree_ros2/bt_action_node.hpp:23[m[K,
+                 from [01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:1[m[K:
+/opt/ros/humble/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, const PortsList&, ExtraArgs ...) [with T = ExecuteTrajectoryAction; ExtraArgs = {BT::RosNodeParams}; std::string = std::__cxx11::basic_string<char>; BT::PortsList = std::unordered_map<std::__cxx11::basic_string<char>, BT::PortInfo>][m[K’:
+[01m[K/opt/ros/humble/include/behaviortree_cpp/bt_factory.h:385:24:[m[K   required from ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = ExecuteTrajectoryAction; ExtraArgs = {BT::RosNodeParams}; std::string = std::__cxx11::basic_string<char>][m[K’
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:60:52:[m[K   required from here
+[01m[K/opt/ros/humble/include/behaviortree_cpp/bt_factory.h:326:64:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: accepts only classed derived from either ActionNodeBase, DecoratorNode, ControlNode or ConditionNode
+  324 |     static_assert(std::is_base_of<ActionNodeBase, T>::[01;31m[Kvalue ||[m[K
+      |                                                       [01;31m[K~~~~~~~~[m[K  
+  325 | [01;31m[K                      std::is_base_of<ControlNode, T>::value ||[m[K
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+  326 | [01;31m[K                      std::is_base_of<DecoratorNode, T>::value ||[m[K
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+  327 | [01;31m[K                      std::is_base_of<ConditionNode, T>::value[m[K,
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[01m[K/opt/ros/humble/include/behaviortree_cpp/bt_factory.h:326:64:[m[K [01;36m[Knote: [m[K‘[01m[K(((((bool)std::integral_constant<bool, false>::value) || ((bool)std::integral_constant<bool, false>::value)) || ((bool)std::integral_constant<bool, false>::value)) || ((bool)std::integral_constant<bool, false>::value))[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/bt_ros2.dir/build.make:76: CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

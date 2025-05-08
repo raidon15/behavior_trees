@@ -1,0 +1,11 @@
+[ 50%] [32m[1mLinking CXX executable simple_bt[0m
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `main':
+simple_bt.cpp:(.text+0xfc): undefined reference to `BT::BehaviorTreeFactory::createTreeFromFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::shared_ptr<BT::Blackboard>)'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `Move::Move(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+simple_bt.cpp:(.text._ZN4MoveC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4MoveC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x58): undefined reference to `BT::SyncActionNode::SyncActionNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, BT::NodeConfiguration const&)'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `void BT::BehaviorTreeFactory::registerNodeType<Move>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+simple_bt.cpp:(.text._ZN2BT19BehaviorTreeFactory16registerNodeTypeI4MoveEEvRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN2BT19BehaviorTreeFactory16registerNodeTypeI4MoveEEvRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0xa6): undefined reference to `BT::BehaviorTreeFactory::registerBuilder(BT::TreeNodeManifest const&, std::function<std::unique_ptr<BT::TreeNode, std::default_delete<BT::TreeNode> > (std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, BT::NodeConfiguration const&)> const&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/simple_bt.dir/build.make:511: simple_bt] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_bt.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

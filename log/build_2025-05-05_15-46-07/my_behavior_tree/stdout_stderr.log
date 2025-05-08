@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target my_behavior_tree[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/my_behavior_tree.dir/src/move_action.cpp.o[0m
+[01m[K/home/benjamin/BT_ws/src/my_behavior_tree/src/move_action.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus MoveArm::tick()[m[K’:
+[01m[K/home/benjamin/BT_ws/src/my_behavior_tree/src/move_action.cpp:39:95:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   39 | ol success = (move_group.plan(plan) == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K);
+      |                                                                                     [01;35m[K^~~~~~~[m[K
+
+In file included from [01m[K/home/benjamin/BT_ws/src/my_behavior_tree/src/move_action.cpp:2[m[K:
+[01m[K/home/benjamin/ws_moveit/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable my_behavior_tree[0m
+[100%] Built target my_behavior_tree
+-- Install configuration: ""
+-- Installing: /home/benjamin/BT_ws/install/my_behavior_tree/lib/my_behavior_tree/my_behavior_tree
+-- Set runtime path of "/home/benjamin/BT_ws/install/my_behavior_tree/lib/my_behavior_tree/my_behavior_tree" to ""
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/ament_index/resource_index/package_run_dependencies/my_behavior_tree
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/ament_index/resource_index/parent_prefix_path/my_behavior_tree
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/my_behavior_tree/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/my_behavior_tree/environment/path.dsv
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/my_behavior_tree/local_setup.bash
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/my_behavior_tree/local_setup.sh
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/my_behavior_tree/local_setup.zsh
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/my_behavior_tree/local_setup.dsv
+-- Installing: /home/benjamin/BT_ws/install/my_behavior_tree/share/my_behavior_tree/package.dsv
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/ament_index/resource_index/packages/my_behavior_tree
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/my_behavior_tree/cmake/my_behavior_treeConfig.cmake
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/my_behavior_tree/cmake/my_behavior_treeConfig-version.cmake
+-- Up-to-date: /home/benjamin/BT_ws/install/my_behavior_tree/share/my_behavior_tree/package.xml

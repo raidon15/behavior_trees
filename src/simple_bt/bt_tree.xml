@@ -1,0 +1,8 @@
+<root BTCPP_format="4" main_tree_to_execute="MainTree">
+    <BehaviorTree ID="MainTree">
+        <Sequence name="MainSequence">
+            <MoveToJointTarget1 />
+            <MoveToJointTarget2 />
+        </Sequence>
+    </BehaviorTree>
+</root>

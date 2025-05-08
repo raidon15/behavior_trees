@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target bt_ros2[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o[0m
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:[m[K In static member function ‘[01m[Kstatic BT::PortsList ExecuteTrajectoryAction::providedPorts()[m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:19:18:[m[K [01;31m[Kerror: [m[K‘[01m[KBT::InputPortBT[m[K’ has not been declared
+   19 |     return { BT::[01;31m[KInputPortBT[m[K::InputPort<moveit_msgs::msg::RobotTrajectory>("trajectory") };  // Define input ports for the action
+      |                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:19:74:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   19 |     return { BT::InputPortBT::InputPort<moveit_msgs::msg::RobotTrajectory[01;31m[K>[m[K("trajectory") };  // Define input ports for the action
+      |                                                                          [01;31m[K^[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:19:90:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{<expression error>}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[KBT::PortsList[m[K’ {aka ‘[01m[Kstd::unordered_map<std::__cxx11::basic_string<char>, BT::PortInfo>[m[K’}
+   19 |     return { BT::InputPortBT::InputPort<moveit_msgs::msg::RobotTrajectory>("trajectory") [01;31m[K}[m[K;  // Define input ports for the action
+      |                                                                                          [01;31m[K^[m[K
+      |                                                                                          [01;31m[K|[m[K
+      |                                                                                          [01;31m[K<brace-enclosed initializer list>[m[K
+gmake[2]: *** [CMakeFiles/bt_ros2.dir/build.make:76: CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

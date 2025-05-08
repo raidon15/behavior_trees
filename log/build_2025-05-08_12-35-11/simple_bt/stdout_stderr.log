@@ -1,0 +1,26 @@
+-- Found behaviortree_ros2: 0.2.0 (/home/benjamin/BT_ws/install/behaviortree_ros2/share/behaviortree_ros2/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/home/benjamin/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/home/benjamin/ros2_humble/install/rosidl_adapter/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/home/benjamin/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/home/benjamin/ros2_humble/install/rmw_implementation_cmake/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.5 (/home/benjamin/ros2_humble/install/rmw_fastrtps_cpp/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found control_msgs: 4.4.0 (/home/benjamin/ros2_ws/install/control_msgs/share/control_msgs/cmake)
+-- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/benjamin/BT_ws/build/simple_bt
+[35m[1mConsolidate compiler generated dependencies of target bt_ros2[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o[0m
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:[m[K In member function ‘[01m[Kvirtual bool ExecuteTrajectoryAction::setGoal(moveit_msgs::action::ExecuteTrajectory::Goal&)[m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:27:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _trajectory_type = struct moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kjoint_names[m[K’
+   27 |     goal.trajectory.[01;31m[Kjoint_names[m[K = {
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:33:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _trajectory_type = struct moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpoints[m[K’
+   33 |     goal.trajectory.[01;31m[Kpoints[m[K.push_back(point);
+      |                     [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/bt_ros2.dir/build.make:76: CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

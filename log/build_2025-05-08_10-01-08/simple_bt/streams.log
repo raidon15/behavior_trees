@@ -1,0 +1,9 @@
+[0.041s] Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20
+[0.153s] -- Configuring done
+[0.161s] -- Generating done
+[0.169s] -- Build files have been written to: /home/benjamin/BT_ws/build/simple_bt
+[0.354s] [35m[1mConsolidate compiler generated dependencies of target simple_bt[0m
+[0.473s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o[0m
+[1.528s] [100%] [32m[1mLinking CXX executable simple_bt[0m
+[1.742s] [100%] Built target simple_bt
+[1.793s] Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '0': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20

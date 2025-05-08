@@ -1,0 +1,18 @@
+[0.042s] Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20
+[0.166s] -- Configuring done
+[0.170s] [31mCMake Error at CMakeLists.txt:15 (add_executable):
+[0.170s]   Cannot find source file:
+[0.170s] 
+[0.170s]     simple_bt.cpp
+[0.170s] 
+[0.170s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[0.170s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[0.170s] 
+[0.170s] [0m
+[0.170s] [31mCMake Error at CMakeLists.txt:15 (add_executable):
+[0.170s]   No SOURCES given to target: simple_bt
+[0.170s] 
+[0.170s] [0m
+[0.170s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.171s] gmake: *** [Makefile:218: cmake_check_build_system] Error 1
+[0.172s] Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '2': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20

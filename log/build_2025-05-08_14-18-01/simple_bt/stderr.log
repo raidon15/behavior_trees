@@ -1,0 +1,21 @@
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:10:93:[m[K [01;31m[Kerror: [m[K‘[01m[KRosNodeParams[m[K’ does not name a type
+   10 |   GenerateAndExecuteTrajectory(const std::string& name, const BT::NodeConfig& config, const [01;31m[KRosNodeParams[m[K& params)
+      |                                                                                             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:[m[K In constructor ‘[01m[KGenerateAndExecuteTrajectory::GenerateAndExecuteTrajectory(const string&, const BT::NodeConfig&, const int&)[m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:11:58:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Knh[m[K’ in ‘[01m[Kparams[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   11 |     : BT::StatefulActionNode(name, config), node_(params.[01;31m[Knh[m[K)
+      |                                                          [01;31m[K^~[m[K
+In file included from [01m[K/home/benjamin/BT_ws/install/behaviortree_ros2/include/behaviortree_ros2/bt_action_node.hpp:23[m[K,
+                 from [01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:1[m[K:
+/opt/ros/humble/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = GenerateAndExecuteTrajectory; ExtraArgs = {BT::RosNodeParams}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:106:57:[m[K   required from here
+[01m[K/opt/ros/humble/include/behaviortree_cpp/bt_factory.h:379:21:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: since you have a static method providedPorts(),
+you MUST add a constructor with signature:
+(const std::string&, const NodeConfig&)
+
+  379 |       static_assert([01;31m[K!(has_static_ports_list && !param_constructable)[m[K,
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/behaviortree_cpp/bt_factory.h:379:21:[m[K [01;36m[Knote: [m[K‘[01m[K((!(bool)has_static_ports_list) || ((bool)param_constructable))[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/bt_ros2.dir/build.make:76: CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

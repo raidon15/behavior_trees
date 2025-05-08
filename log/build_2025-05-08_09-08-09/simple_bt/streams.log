@@ -1,0 +1,11 @@
+[0.037s] Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20
+[0.266s] [35m[1mConsolidate compiler generated dependencies of target simple_bt[0m
+[0.352s] [ 33%] [32mBuilding CXX object CMakeFiles/simple_bt.dir/bt_ros2.cpp.o[0m
+[0.389s] [01m[K/home/benjamin/BT_ws/src/simple_bt/bt_ros2.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kbehaviortree_ros2/bt_action_node.hpp: No such file or directory
+[0.389s]     1 | #include [01;31m[K<behaviortree_ros2/bt_action_node.hpp>[m[K
+[0.389s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.389s] compilation terminated.
+[0.390s] gmake[2]: *** [CMakeFiles/simple_bt.dir/build.make:90: CMakeFiles/simple_bt.dir/bt_ros2.cpp.o] Error 1
+[0.390s] gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/simple_bt.dir/all] Error 2
+[0.390s] gmake: *** [Makefile:91: all] Error 2
+[0.392s] Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '2': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20

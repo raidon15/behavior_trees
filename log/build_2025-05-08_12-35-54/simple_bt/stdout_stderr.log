@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target bt_ros2[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o[0m
+[100%] [32m[1mLinking CXX executable bt_ros2[0m
+[100%] Built target bt_ros2
+-- Install configuration: ""
+-- Installing: /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/bt_ros2
+-- Set runtime path of "/home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/bt_ros2" to ""

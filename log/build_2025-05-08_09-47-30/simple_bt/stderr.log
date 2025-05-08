@@ -1,0 +1,50 @@
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: warning: relocation against `_ZTVN2BT13DecoratorNodeE' in read-only section `.text._ZN2BT13DecoratorNodeD2Ev[_ZN2BT13DecoratorNodeD5Ev]'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `main':
+simple_bt.cpp:(.text+0x2a): undefined reference to `BT::BehaviorTreeFactory::BehaviorTreeFactory()'
+/usr/bin/ld: simple_bt.cpp:(.text+0xfc): undefined reference to `BT::BehaviorTreeFactory::createTreeFromFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::shared_ptr<BT::Blackboard>)'
+/usr/bin/ld: simple_bt.cpp:(.text+0x158): undefined reference to `BT::Tree::~Tree()'
+/usr/bin/ld: simple_bt.cpp:(.text+0x218): undefined reference to `BT::Tree::~Tree()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `BT::TreeNode::~TreeNode()':
+simple_bt.cpp:(.text._ZN2BT8TreeNodeD2Ev[_ZN2BT8TreeNodeD5Ev]+0x13): undefined reference to `vtable for BT::TreeNode'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `BT::DecoratorNode::~DecoratorNode()':
+simple_bt.cpp:(.text._ZN2BT13DecoratorNodeD2Ev[_ZN2BT13DecoratorNodeD5Ev]+0x13): undefined reference to `vtable for BT::DecoratorNode'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `BT::SyncActionNode::~SyncActionNode()':
+simple_bt.cpp:(.text._ZN2BT14SyncActionNodeD2Ev[_ZN2BT14SyncActionNodeD5Ev]+0x13): undefined reference to `vtable for BT::SyncActionNode'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `BT::ForceSuccessNode::tick()':
+simple_bt.cpp:(.text._ZN2BT16ForceSuccessNode4tickEv[_ZN2BT16ForceSuccessNode4tickEv]+0x2c): undefined reference to `BT::TreeNode::setStatus(BT::NodeStatus)'
+/usr/bin/ld: simple_bt.cpp:(.text._ZN2BT16ForceSuccessNode4tickEv[_ZN2BT16ForceSuccessNode4tickEv]+0x70): undefined reference to `BT::DecoratorNode::resetChild()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `BT::ForceFailureNode::tick()':
+simple_bt.cpp:(.text._ZN2BT16ForceFailureNode4tickEv[_ZN2BT16ForceFailureNode4tickEv]+0x2c): undefined reference to `BT::TreeNode::setStatus(BT::NodeStatus)'
+/usr/bin/ld: simple_bt.cpp:(.text._ZN2BT16ForceFailureNode4tickEv[_ZN2BT16ForceFailureNode4tickEv]+0x70): undefined reference to `BT::DecoratorNode::resetChild()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `BT::KeepRunningUntilFailureNode::tick()':
+simple_bt.cpp:(.text._ZN2BT27KeepRunningUntilFailureNode4tickEv[_ZN2BT27KeepRunningUntilFailureNode4tickEv]+0x1d): undefined reference to `BT::TreeNode::setStatus(BT::NodeStatus)'
+/usr/bin/ld: simple_bt.cpp:(.text._ZN2BT27KeepRunningUntilFailureNode4tickEv[_ZN2BT27KeepRunningUntilFailureNode4tickEv]+0x6b): undefined reference to `BT::DecoratorNode::resetChild()'
+/usr/bin/ld: simple_bt.cpp:(.text._ZN2BT27KeepRunningUntilFailureNode4tickEv[_ZN2BT27KeepRunningUntilFailureNode4tickEv]+0x7e): undefined reference to `BT::DecoratorNode::resetChild()'
+/usr/bin/ld: simple_bt.cpp:(.text._ZN2BT27KeepRunningUntilFailureNode4tickEv[_ZN2BT27KeepRunningUntilFailureNode4tickEv]+0x98): undefined reference to `BT::TreeNode::status() const'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `BT::Tree::initialize()':
+simple_bt.cpp:(.text._ZN2BT4Tree10initializeEv[_ZN2BT4Tree10initializeEv]+0xba): undefined reference to `BT::TreeNode::setWakeUpInstance(std::shared_ptr<BT::WakeUpSignal>)'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `BT::Tree::tickRoot()':
+simple_bt.cpp:(.text._ZN2BT4Tree8tickRootEv[_ZN2BT4Tree8tickRootEv]+0xc6): undefined reference to `BT::TreeNode::setStatus(BT::NodeStatus)'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `Move::Move(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+simple_bt.cpp:(.text._ZN4MoveC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4MoveC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x58): undefined reference to `BT::SyncActionNode::SyncActionNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, BT::NodeConfiguration const&)'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o: in function `void BT::BehaviorTreeFactory::registerNodeType<Move>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+simple_bt.cpp:(.text._ZN2BT19BehaviorTreeFactory16registerNodeTypeI4MoveEEvRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN2BT19BehaviorTreeFactory16registerNodeTypeI4MoveEEvRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0xa6): undefined reference to `BT::BehaviorTreeFactory::registerBuilder(BT::TreeNodeManifest const&, std::function<std::unique_ptr<BT::TreeNode, std::default_delete<BT::TreeNode> > (std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, BT::NodeConfiguration const&)> const&)'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTV4Move[_ZTV4Move]+0x20): undefined reference to `BT::SyncActionNode::executeTick()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTVN2BT27KeepRunningUntilFailureNodeE[_ZTVN2BT27KeepRunningUntilFailureNodeE]+0x20): undefined reference to `BT::DecoratorNode::executeTick()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTVN2BT27KeepRunningUntilFailureNodeE[_ZTVN2BT27KeepRunningUntilFailureNodeE]+0x28): undefined reference to `BT::DecoratorNode::halt()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTVN2BT16ForceFailureNodeE[_ZTVN2BT16ForceFailureNodeE]+0x20): undefined reference to `BT::DecoratorNode::executeTick()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTVN2BT16ForceFailureNodeE[_ZTVN2BT16ForceFailureNodeE]+0x28): undefined reference to `BT::DecoratorNode::halt()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTVN2BT16ForceSuccessNodeE[_ZTVN2BT16ForceSuccessNodeE]+0x20): undefined reference to `BT::DecoratorNode::executeTick()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTVN2BT16ForceSuccessNodeE[_ZTVN2BT16ForceSuccessNodeE]+0x28): undefined reference to `BT::DecoratorNode::halt()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTVN2BT14ActionNodeBaseE[_ZTVN2BT14ActionNodeBaseE]+0x20): undefined reference to `BT::TreeNode::executeTick()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTVN2BT8LeafNodeE[_ZTVN2BT8LeafNodeE]+0x20): undefined reference to `BT::TreeNode::executeTick()'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTI4Move[_ZTI4Move]+0x10): undefined reference to `typeinfo for BT::SyncActionNode'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTIN2BT27KeepRunningUntilFailureNodeE[_ZTIN2BT27KeepRunningUntilFailureNodeE]+0x10): undefined reference to `typeinfo for BT::DecoratorNode'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTIN2BT16ForceFailureNodeE[_ZTIN2BT16ForceFailureNodeE]+0x10): undefined reference to `typeinfo for BT::DecoratorNode'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTIN2BT16ForceSuccessNodeE[_ZTIN2BT16ForceSuccessNodeE]+0x10): undefined reference to `typeinfo for BT::DecoratorNode'
+/usr/bin/ld: CMakeFiles/simple_bt.dir/src/simple_bt.cpp.o:(.data.rel.ro._ZTIN2BT8LeafNodeE[_ZTIN2BT8LeafNodeE]+0x10): undefined reference to `typeinfo for BT::TreeNode'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/simple_bt.dir/build.make:97: simple_bt] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/simple_bt.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target bt_ros2[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o[0m
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:[m[K In function ‘[01m[Kvoid saveTreeToXML(const BT::Tree&, const string&)[m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:167:30:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst string[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kbool[m[K’
+  167 |     BT::WriteTreeToXML(tree, [01;31m[Kfilename[m[K, true); // true = add TreeNodeModel
+      |                              [01;31m[K^~~~~~~~[m[K
+      |                              [01;31m[K|[m[K
+      |                              [01;31m[Kconst string {aka const std::__cxx11::basic_string<char>}[m[K
+In file included from [01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:8[m[K:
+[01m[K/opt/ros/humble/include/behaviortree_cpp/xml_parsing.h:81:65:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kstd::string BT::WriteTreeToXML(const BT::Tree&, bool, bool)[m[K’
+   81 | [[nodiscard]] std::string WriteTreeToXML(const Tree& tree, [01;36m[Kbool add_metadata[m[K,
+      |                                                            [01;36m[K~~~~~^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/bt_ros2.dir/build.make:76: CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

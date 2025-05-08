@@ -1,0 +1,14 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o[0m
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:[m[K In function ‘[01m[Kvoid saveTreeToXML(BT::BehaviorTreeFactory&, const BT::Tree&, const string&)[m[K’:
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:164:7:[m[K [01;31m[Kerror: [m[K‘[01m[KXMLExporter[m[K’ is not a member of ‘[01m[KBT[m[K’
+  164 |   BT::[01;31m[KXMLExporter[m[K exporter;
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:167:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kexporter[m[K’ was not declared in this scope
+  167 |   std::string xml_content = [01;31m[Kexporter[m[K.exportXML(tree, true);  // true = add TreeNodeModel
+      |                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/simple_bt/src/bt_ros2.cpp:170:34:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ofstream out_file[m[K’ has initializer but incomplete type
+  170 |   std::ofstream out_file(filename[01;31m[K)[m[K;
+      |                                  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/bt_ros2.dir/build.make:76: CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_ros2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

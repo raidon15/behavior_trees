@@ -1,0 +1,13 @@
+[0.040s] Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20
+[0.130s] -- Configuring done
+[0.140s] -- Generating done
+[0.469s] -- Build files have been written to: /home/benjamin/BT_ws/build/simple_bt
+[0.569s] [35m[1mConsolidate compiler generated dependencies of target simple_bt[0m
+[0.628s] [ 50%] [32m[1mLinking CXX executable simple_bt[0m
+[0.873s] [100%] Built target simple_bt
+[0.913s] Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '0': /usr/bin/cmake --build /home/benjamin/BT_ws/build/simple_bt -- -j20 -l20
+[0.951s] Invoking command in '/home/benjamin/BT_ws/build/simple_bt': /usr/bin/cmake --install /home/benjamin/BT_ws/build/simple_bt
+[0.985s] -- Install configuration: ""
+[0.986s] -- Installing: /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/simple_bt
+[0.990s] -- Set runtime path of "/home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/simple_bt" to ""
+[0.991s] Invoked command in '/home/benjamin/BT_ws/build/simple_bt' returned '0': /usr/bin/cmake --install /home/benjamin/BT_ws/build/simple_bt

@@ -1,0 +1,4 @@
+source;share/actions_ros2_clients/local_setup.bash
+source;share/actions_ros2_clients/local_setup.dsv
+source;share/actions_ros2_clients/local_setup.sh
+source;share/actions_ros2_clients/local_setup.zsh

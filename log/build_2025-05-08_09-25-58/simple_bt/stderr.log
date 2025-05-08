@@ -1,0 +1,7 @@
+[01m[K/home/benjamin/BT_ws/src/simple_bt/bt_ros2.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kbehaviortree_ros2/bt_action_node.hpp: No such file or directory
+    1 | #include [01;31m[K<behaviortree_ros2/bt_action_node.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/simple_bt.dir/build.make:90: CMakeFiles/simple_bt.dir/bt_ros2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_bt.dir/all] Error 2
+gmake: *** [Makefile:101: all] Error 2

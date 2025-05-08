@@ -1,0 +1,2 @@
+Invoking command in '/home/benjamin/BT_ws/build/actions_ros2_clients': /usr/bin/cmake /home/benjamin/BT_ws/src/actions_ros2_clients -DCMAKE_INSTALL_PREFIX=/home/benjamin/BT_ws/install/actions_ros2_clients
+Invoked command in '/home/benjamin/BT_ws/build/actions_ros2_clients' returned '1': /usr/bin/cmake /home/benjamin/BT_ws/src/actions_ros2_clients -DCMAKE_INSTALL_PREFIX=/home/benjamin/BT_ws/install/actions_ros2_clients

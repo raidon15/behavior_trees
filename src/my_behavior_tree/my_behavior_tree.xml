@@ -1,0 +1,5 @@
+<root main_tree_to_execute="MainTree">
+    <BehaviorTree ID="MainTree">
+        <MoveArm target_position="[2.0, 2.0, 2.0, 2.5, 2.5, 2.5, 2.5]" />
+    </BehaviorTree>
+</root>

@@ -1,0 +1,21 @@
+In file included from [01m[K/home/benjamin/ros2_humble/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest.h:62[m[K,
+                 from [01m[K/home/benjamin/BT_ws/src/BehaviorTree.CPP/tests/gtest_factory.cpp:1[m[K:
+[01m[K/home/benjamin/BT_ws/src/BehaviorTree.CPP/tests/gtest_factory.cpp:[m[K In member function ‘[01m[Kvirtual void BehaviorTreeFactory_NotRegisteredNode_Test::TestBody()[m[K’:
+[01m[K/home/benjamin/ros2_humble/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-internal.h:1258:53:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[KBT::Tree BT::BehaviorTreeFactory::createTreeFromText(const string&, BT::Blackboard::Ptr)[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+ 1258 |   if (::testing::internal::AlwaysTrue()) { statement[01;35m[K;[m[K }
+      |                                                     [01;35m[K^[m[K
+[01m[K/home/benjamin/ros2_humble/install/gtest_vendor/src/gtest_vendor/include/gtest/internal/gtest-internal.h:1305:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KGTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_[m[K’
+ 1305 |       [01;36m[KGTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_[m[K(statement); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/benjamin/ros2_humble/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest.h:1963:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KGTEST_TEST_ANY_THROW_[m[K’
+ 1963 |   [01;36m[KGTEST_TEST_ANY_THROW_[m[K(statement, GTEST_FATAL_FAILURE_)
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/benjamin/BT_ws/src/BehaviorTree.CPP/tests/gtest_factory.cpp:110:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KASSERT_ANY_THROW[m[K’
+  110 |   [01;36m[KASSERT_ANY_THROW[m[K(factory.createTreeFromText(xml_text));
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/benjamin/BT_ws/src/BehaviorTree.CPP/include/behaviortree_cpp/bt_parser.h:16[m[K,
+                 from [01m[K/home/benjamin/BT_ws/src/BehaviorTree.CPP/include/behaviortree_cpp/xml_parsing.h:4[m[K,
+                 from [01m[K/home/benjamin/BT_ws/src/BehaviorTree.CPP/tests/gtest_factory.cpp:6[m[K:
+[01m[K/home/benjamin/BT_ws/src/BehaviorTree.CPP/include/behaviortree_cpp/bt_factory.h:412:22:[m[K [01;36m[Knote: [m[Kdeclared here
+  412 |   [[nodiscard]] Tree [01;36m[KcreateTreeFromText[m[K(
+      |                      [01;36m[K^~~~~~~~~~~~~~~~~~[m[K

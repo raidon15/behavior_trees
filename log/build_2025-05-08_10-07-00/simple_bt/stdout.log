@@ -1,0 +1,9 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/benjamin/BT_ws/build/simple_bt
+[35m[1mConsolidate compiler generated dependencies of target simple_bt[0m
+[ 50%] [32m[1mLinking CXX executable simple_bt[0m
+[100%] Built target simple_bt
+-- Install configuration: ""
+-- Installing: /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/simple_bt
+-- Set runtime path of "/home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/simple_bt" to ""
