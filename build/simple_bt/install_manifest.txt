@@ -1,1 +1,2 @@
 /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/bt_ros2
+/home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/read_topic

@@ -210,6 +210,19 @@ bt_ros2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bt_ros2.dir/build.make CMakeFiles/bt_ros2.dir/build
 .PHONY : bt_ros2/fast
 
+#=============================================================================
+# Target rules for targets named read_topic
+
+# Build rule for target.
+read_topic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_topic
+.PHONY : read_topic
+
+# fast build rule for target.
+read_topic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_topic.dir/build.make CMakeFiles/read_topic.dir/build
+.PHONY : read_topic/fast
+
 src/bt_ros2.o: src/bt_ros2.cpp.o
 .PHONY : src/bt_ros2.o
 
@@ -234,6 +247,30 @@ src/bt_ros2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bt_ros2.dir/build.make CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.s
 .PHONY : src/bt_ros2.cpp.s
 
+src/read_topic.o: src/read_topic.cpp.o
+.PHONY : src/read_topic.o
+
+# target to build an object file
+src/read_topic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_topic.dir/build.make CMakeFiles/read_topic.dir/src/read_topic.cpp.o
+.PHONY : src/read_topic.cpp.o
+
+src/read_topic.i: src/read_topic.cpp.i
+.PHONY : src/read_topic.i
+
+# target to preprocess a source file
+src/read_topic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_topic.dir/build.make CMakeFiles/read_topic.dir/src/read_topic.cpp.i
+.PHONY : src/read_topic.cpp.i
+
+src/read_topic.s: src/read_topic.cpp.s
+.PHONY : src/read_topic.s
+
+# target to generate assembly for a file
+src/read_topic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_topic.dir/build.make CMakeFiles/read_topic.dir/src/read_topic.cpp.s
+.PHONY : src/read_topic.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... simple_bt_uninstall"
 	@echo "... uninstall"
 	@echo "... bt_ros2"
+	@echo "... read_topic"
 	@echo "... src/bt_ros2.o"
 	@echo "... src/bt_ros2.i"
 	@echo "... src/bt_ros2.s"
+	@echo "... src/read_topic.o"
+	@echo "... src/read_topic.i"
+	@echo "... src/read_topic.s"
 .PHONY : help
 
 

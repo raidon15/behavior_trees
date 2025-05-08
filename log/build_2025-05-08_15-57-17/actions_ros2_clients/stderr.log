@@ -1,0 +1,4 @@
+[01m[K/home/benjamin/BT_ws/src/actions_ros2_clients/src/execute_trajectory_client.cpp:[m[K In member function ‘[01m[Kvoid ExecuteTrajectoryActionClient::feedback_callback(rclcpp_action::ClientGoalHandle<moveit_msgs::action::ExecuteTrajectory>::SharedPtr, std::shared_ptr<const moveit_msgs::action::ExecuteTrajectory_Feedback_<std::allocator<void> > >)[m[K’:
+[01m[K/home/benjamin/BT_ws/src/actions_ros2_clients/src/execute_trajectory_client.cpp:65:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   65 |         [01;35m[Kconst std::shared_ptr<const ExecuteTrajectory::Feedback> feedback[m[K)
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
