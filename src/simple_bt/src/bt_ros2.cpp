@@ -137,82 +137,6 @@ private:
   bool result_ = false;
 };
 
-class GenerateAndExecuteTrajectory2 : public BT::StatefulActionNode
-{
-public:
-  GenerateAndExecuteTrajectory2(const std::string& name, const BT::NodeConfig& config, const BT::RosNodeParams& params)
-    : BT::StatefulActionNode(name, config), node_(params.nh)
-  {
-    // Create action client
-    action_client_ = rclcpp_action::create_client<moveit_msgs::action::ExecuteTrajectory>(node_, "execute_trajectory");
-  }
-
-  static BT::PortsList providedPorts()
-  {
-    return {};
-  }
-
-  BT::NodeStatus onStart() override
-  {
-    // Example: Create a trajectory (you would normally get this from planning)
-    moveit_msgs::msg::RobotTrajectory trajectory;
-    trajectory.joint_trajectory.joint_names = { "joint_a1", "joint_a2", "joint_a3", "joint_a4",
-                                                "joint_a5", "joint_a6", "joint_a7" };
-
-    // Create a JointTrajectoryPoint message
-    trajectory_msgs::msg::JointTrajectoryPoint initial_point;
-    initial_point.time_from_start = rclcpp::Duration(1, 0);
-    initial_point.positions = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
-    trajectory.joint_trajectory.points.push_back(initial_point);
-
-    trajectory_msgs::msg::JointTrajectoryPoint final_point;
-    final_point.time_from_start = rclcpp::Duration(5, 0);
-    final_point.positions = { 1.57, 0.0, 0.0, -1.57, 1.0, 0.0, 0.0 };
-    trajectory.joint_trajectory.points.push_back(final_point);
-
-    // Send to action server
-    auto goal_msg = moveit_msgs::action::ExecuteTrajectory::Goal();
-    goal_msg.trajectory = trajectory;
-
-    auto send_goal_options = typename rclcpp_action::Client<moveit_msgs::action::ExecuteTrajectory>::SendGoalOptions();
-    send_goal_options.goal_response_callback = [this](auto) { RCLCPP_INFO(node_->get_logger(), "Goal accepted"); };
-    send_goal_options.result_callback = [this](const auto& result) {
-      result_ = result.result->error_code.val == moveit_msgs::msg::MoveItErrorCodes::SUCCESS;
-      received_result_ = true;
-    };
-
-    future_handle_ = action_client_->async_send_goal(goal_msg, send_goal_options);
-    return BT::NodeStatus::RUNNING;
-  }
-
-  BT::NodeStatus onRunning() override
-  {
-    if (received_result_)
-    {
-      setOutput("success", result_);
-      return result_ ? BT::NodeStatus::SUCCESS : BT::NodeStatus::FAILURE;
-    }
-    return BT::NodeStatus::RUNNING;
-  }
-
-  void onHalted() override
-  {
-  }
-
-private:
-  rclcpp::Node::SharedPtr node_;
-  rclcpp_action::Client<moveit_msgs::action::ExecuteTrajectory>::SharedPtr action_client_;
-  std::shared_future<typename rclcpp_action::ClientGoalHandle<moveit_msgs::action::ExecuteTrajectory>::SharedPtr>
-      future_handle_;
-
-  std::vector<std::string> joint_names_;
-  std::vector<double> target_joint_values_;
-  double velocity_scaling_;
-  double acceleration_scaling_;
-
-  bool received_result_ = false;
-  bool result_ = false;
-};
 
 void saveTreeToXML(const BT::Tree& tree, const std::string& filename)
 {
@@ -241,8 +165,8 @@ int main(int argc, char** argv)
   params.default_port_value = "/execute_trajectory";
 
   // Register the action node with the factory
-  factory.registerNodeType<GenerateAndExecuteTrajectory>("MoveToJointTarget1", params);
-  factory.registerNodeType<GenerateAndExecuteTrajectory2>("MoveToJointTarget2", params);
+  factory.registerNodeType<GenerateAndExecuteTrajectory>("MoveToJointTarget", params);
+
 
   auto tree =
       factory.createTreeFromFile("/home/benjamin/BT_ws/src/simple_bt/bt_tree.xml");  // Replace with your BT XML file

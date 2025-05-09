@@ -1,7 +1,8 @@
 <root BTCPP_format="4">
     <BehaviorTree ID="MainTree" _fullpath="">
         <Sequence name="MainSequence" _uid="1">
-            <MoveToJointTarget1 name="MoveToJointTarget1" _uid="2" initial_positions="[1.57, 0.0, 0.0, -1.57, 1.0, 0.0, 0.0]" final_positions="[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]"/>
+            <MoveToJointTarget name="MoveToJointTarget" _uid="2" initial_positions="[1.57, 0.0, 0.0, -1.57, 1.0, 0.0, 0.0]" final_positions="[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]"/>
+            <MoveToJointTarget name="MoveToJointTarget" _uid="3" initial_positions="[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]" final_positions="[1.57, 0.0, 0.0, -1.57, 1.0, 0.0, 0.0]"/>
         </Sequence>
     </BehaviorTree>
     <TreeNodesModel>
@@ -38,11 +39,10 @@
             <input_port name="if_empty" type="BT::NodeStatus" default="SUCCESS">Status to return if queue is empty: SUCCESS, FAILURE, SKIPPED</input_port>
             <inout_port name="queue" type="std::shared_ptr&lt;std::deque&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::allocator&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;"/>
         </Decorator>
-        <Action ID="MoveToJointTarget1">
+        <Action ID="MoveToJointTarget">
             <input_port name="final_positions" type="std::string"/>
             <input_port name="initial_positions" type="std::string"/>
         </Action>
-        <Action ID="MoveToJointTarget2"/>
         <Control ID="Parallel">
             <input_port name="failure_count" type="int" default="1">number of children that need to fail to trigger a FAILURE</input_port>
             <input_port name="success_count" type="int" default="-1">number of children that need to succeed to trigger a SUCCESS</input_port>
