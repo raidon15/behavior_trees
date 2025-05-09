@@ -1,0 +1,11 @@
+<root BTCPP_format="4" main_tree_to_execute="MainTree">
+    <BehaviorTree ID="MainTree">
+        <Sequence>
+            <ReadJointStates
+                joint_names="{joint_names}"
+                positions="{current_positions}"
+                velocities="{current_velocities}"
+                efforts="{current_efforts}" />
+        </Sequence>
+    </BehaviorTree>
+</root>

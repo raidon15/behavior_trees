@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target read_topic[0m
+[ 50%] Built target bt_ros2
+[100%] Built target read_topic
+-- Install configuration: ""
+-- Up-to-date: /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/bt_ros2
+-- Up-to-date: /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/read_topic

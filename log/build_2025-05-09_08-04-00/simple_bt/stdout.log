@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target read_topic[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/read_topic.dir/src/read_topic.cpp.o[0m
+[ 75%] Built target bt_ros2
+[100%] [32m[1mLinking CXX executable read_topic[0m
+[100%] Built target read_topic
+-- Install configuration: ""
+-- Up-to-date: /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/bt_ros2
+-- Installing: /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/read_topic
+-- Set runtime path of "/home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/read_topic" to ""

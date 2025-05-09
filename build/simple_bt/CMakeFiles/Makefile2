@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/benjamin/BT_ws/build/simple_bt
 
 # The main recursive "all" target.
 all: CMakeFiles/bt_ros2.dir/all
+all: CMakeFiles/read_topic.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/simple_bt_uninstall.dir/clean
 clean: CMakeFiles/bt_ros2.dir/clean
+clean: CMakeFiles/read_topic.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -153,6 +155,32 @@ bt_ros2: CMakeFiles/bt_ros2.dir/rule
 CMakeFiles/bt_ros2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bt_ros2.dir/build.make CMakeFiles/bt_ros2.dir/clean
 .PHONY : CMakeFiles/bt_ros2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/read_topic.dir
+
+# All Build rule for target.
+CMakeFiles/read_topic.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_topic.dir/build.make CMakeFiles/read_topic.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_topic.dir/build.make CMakeFiles/read_topic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/benjamin/BT_ws/build/simple_bt/CMakeFiles --progress-num=3,4 "Built target read_topic"
+.PHONY : CMakeFiles/read_topic.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/read_topic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/benjamin/BT_ws/build/simple_bt/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/read_topic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/benjamin/BT_ws/build/simple_bt/CMakeFiles 0
+.PHONY : CMakeFiles/read_topic.dir/rule
+
+# Convenience name for target.
+read_topic: CMakeFiles/read_topic.dir/rule
+.PHONY : read_topic
+
+# clean rule for target.
+CMakeFiles/read_topic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_topic.dir/build.make CMakeFiles/read_topic.dir/clean
+.PHONY : CMakeFiles/read_topic.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
