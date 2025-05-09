@@ -1,0 +1,24 @@
+# Ignore all log files and directories
+*.log
+logs/
+log/
+*.logs/
+/logs/
+/log/
+/logs/*
+/log/*
+# General build artifacts
+build/
+bin/
+obj/
+out/
+dist/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# ROS/ROS2 specific
+install/
+log/

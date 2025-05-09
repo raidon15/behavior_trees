@@ -6,6 +6,36 @@
 #include <filesystem>
 #include <fstream>
 #include "behaviortree_cpp/xml_parsing.h"  // Needed for XML export
+#include <vector>
+#include <sstream>
+#include <algorithm>
+
+std::vector<double> parseInputToVector(const std::string& input)
+{
+    std::vector<double> result;
+
+    // Remove brackets if present
+    std::string clean_input = input;
+    clean_input.erase(std::remove(clean_input.begin(), clean_input.end(), '['), clean_input.end());
+    clean_input.erase(std::remove(clean_input.begin(), clean_input.end(), ']'), clean_input.end());
+
+    // Split the string by commas
+    std::stringstream ss(clean_input);
+    std::string item;
+    while (std::getline(ss, item, ','))
+    {
+        try
+        {
+            result.push_back(std::stod(item));  // Convert each substring to double
+        }
+        catch (const std::invalid_argument& e)
+        {
+            RCLCPP_ERROR(rclcpp::get_logger("BT"), "Invalid input: %s", item.c_str());
+        }
+    }
+
+    return result;
+}
 
 class GenerateAndExecuteTrajectory : public BT::StatefulActionNode
 {
@@ -19,11 +49,34 @@ public:
 
   static BT::PortsList providedPorts()
   {
-    return {};
+    return {
+      BT::InputPort<std::string>("initial_positions"),
+      BT::InputPort<std::string>("final_positions")
+    };
   }
 
   BT::NodeStatus onStart() override
   {
+    // Retrieve input ports
+    std::string initial_positions_str;
+    std::string final_positions_str;
+
+    if (!getInput("initial_positions", initial_positions_str))
+    {
+        RCLCPP_ERROR(node_->get_logger(), "Missing input [initial_positions]");
+        return BT::NodeStatus::FAILURE;
+    }
+
+    if (!getInput("final_positions", final_positions_str))
+    {
+        RCLCPP_ERROR(node_->get_logger(), "Missing input [final_positions]");
+        return BT::NodeStatus::FAILURE;
+    }
+
+    // Convert inputs to std::vector<double>
+    std::vector<double> initial_positions = parseInputToVector(initial_positions_str);
+    std::vector<double> final_positions = parseInputToVector(final_positions_str);
+
     // Example: Create a trajectory (you would normally get this from planning)
     moveit_msgs::msg::RobotTrajectory trajectory;
     trajectory.joint_trajectory.joint_names = { "joint_a1", "joint_a2", "joint_a3", "joint_a4",
@@ -32,12 +85,12 @@ public:
     // Create a JointTrajectoryPoint message
     trajectory_msgs::msg::JointTrajectoryPoint initial_point;
     initial_point.time_from_start = rclcpp::Duration(1, 0);
-    initial_point.positions = { 1.57, 0.0, 0.0, -1.57, 1.0, 0.0, 0.0 };
+    initial_point.positions = initial_positions;
     trajectory.joint_trajectory.points.push_back(initial_point);
 
     trajectory_msgs::msg::JointTrajectoryPoint final_point;
     final_point.time_from_start = rclcpp::Duration(5, 0);
-    final_point.positions = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+    final_point.positions = final_positions;
     trajectory.joint_trajectory.points.push_back(final_point);
 
     // Send to action server
@@ -47,8 +100,8 @@ public:
     auto send_goal_options = typename rclcpp_action::Client<moveit_msgs::action::ExecuteTrajectory>::SendGoalOptions();
     send_goal_options.goal_response_callback = [this](auto) { RCLCPP_INFO(node_->get_logger(), "Goal accepted"); };
     send_goal_options.result_callback = [this](const auto& result) {
-      result_ = result.result->error_code.val == moveit_msgs::msg::MoveItErrorCodes::SUCCESS;
-      received_result_ = true;
+        result_ = result.result->error_code.val == moveit_msgs::msg::MoveItErrorCodes::SUCCESS;
+        received_result_ = true;
     };
 
     future_handle_ = action_client_->async_send_goal(goal_msg, send_goal_options);
