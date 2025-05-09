@@ -19,6 +19,8 @@ find_package(moveit_msgs REQUIRED)      # Add rclcpp for ROS 2 nodes
 # Add executable
 add_executable(bt_ros2 src/bt_ros2.cpp)
 add_executable(read_topic src/read_topic.cpp)
+add_executable(combined_nodes src/combined_nodes.cpp)
+# 
 
 
 # Link dependencies
@@ -37,8 +39,19 @@ ament_target_dependencies(read_topic
   
   )
 
+  ament_target_dependencies(combined_nodes
+  behaviortree_ros2
+  control_msgs
+  trajectory_msgs
+  sensor_msgs
+  rclcpp
+  moveit_msgs
+  
+  )
+
 install(TARGETS
   bt_ros2
   read_topic
+  combined_nodes
   DESTINATION lib/${PROJECT_NAME}
 )

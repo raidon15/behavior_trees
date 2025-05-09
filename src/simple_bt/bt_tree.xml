@@ -1,8 +1,12 @@
 <root BTCPP_format="4" main_tree_to_execute="MainTree">
     <BehaviorTree ID="MainTree">
         <Sequence name="MainSequence">
-            <MoveToJointTarget1 />
-            <MoveToJointTarget2 />
+            <!-- Read joint states and store positions in the blackboard -->
+            
+
+            <!-- Use the positions from the blackboard as initial_positions -->
+            <Posicion1  final_positions="[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]" />
+            <Posicion2  final_positions="[0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0]" />
         </Sequence>
     </BehaviorTree>
 </root>

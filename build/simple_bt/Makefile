@@ -223,6 +223,19 @@ read_topic/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_topic.dir/build.make CMakeFiles/read_topic.dir/build
 .PHONY : read_topic/fast
 
+#=============================================================================
+# Target rules for targets named combined_nodes
+
+# Build rule for target.
+combined_nodes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 combined_nodes
+.PHONY : combined_nodes
+
+# fast build rule for target.
+combined_nodes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_nodes.dir/build.make CMakeFiles/combined_nodes.dir/build
+.PHONY : combined_nodes/fast
+
 src/bt_ros2.o: src/bt_ros2.cpp.o
 .PHONY : src/bt_ros2.o
 
@@ -246,6 +259,30 @@ src/bt_ros2.s: src/bt_ros2.cpp.s
 src/bt_ros2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bt_ros2.dir/build.make CMakeFiles/bt_ros2.dir/src/bt_ros2.cpp.s
 .PHONY : src/bt_ros2.cpp.s
+
+src/combined_nodes.o: src/combined_nodes.cpp.o
+.PHONY : src/combined_nodes.o
+
+# target to build an object file
+src/combined_nodes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_nodes.dir/build.make CMakeFiles/combined_nodes.dir/src/combined_nodes.cpp.o
+.PHONY : src/combined_nodes.cpp.o
+
+src/combined_nodes.i: src/combined_nodes.cpp.i
+.PHONY : src/combined_nodes.i
+
+# target to preprocess a source file
+src/combined_nodes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_nodes.dir/build.make CMakeFiles/combined_nodes.dir/src/combined_nodes.cpp.i
+.PHONY : src/combined_nodes.cpp.i
+
+src/combined_nodes.s: src/combined_nodes.cpp.s
+.PHONY : src/combined_nodes.s
+
+# target to generate assembly for a file
+src/combined_nodes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_nodes.dir/build.make CMakeFiles/combined_nodes.dir/src/combined_nodes.cpp.s
+.PHONY : src/combined_nodes.cpp.s
 
 src/read_topic.o: src/read_topic.cpp.o
 .PHONY : src/read_topic.o
@@ -287,10 +324,14 @@ help:
 	@echo "... simple_bt_uninstall"
 	@echo "... uninstall"
 	@echo "... bt_ros2"
+	@echo "... combined_nodes"
 	@echo "... read_topic"
 	@echo "... src/bt_ros2.o"
 	@echo "... src/bt_ros2.i"
 	@echo "... src/bt_ros2.s"
+	@echo "... src/combined_nodes.o"
+	@echo "... src/combined_nodes.i"
+	@echo "... src/combined_nodes.s"
 	@echo "... src/read_topic.o"
 	@echo "... src/read_topic.i"
 	@echo "... src/read_topic.s"
