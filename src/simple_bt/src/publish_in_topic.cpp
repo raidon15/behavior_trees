@@ -65,13 +65,14 @@ int main(int argc, char **argv)
 
   // Load the behavior tree from an XML file
   auto tree = factory.createTreeFromText(
-      R"(
-        <root main_tree_to_execute="MainTree">
-            <BehaviorTree ID="MainTree">
-                <PublishBool value="false" topic="/fabricare/electrovalve_1" />
-            </BehaviorTree>
-        </root>
-        )");
+      R"(<root BTCPP_format="4" main_tree_to_execute="MainTree">
+    <BehaviorTree ID="MainTree">
+        <Sequence>
+            <PublishBool value="false" topic="/fabricare/electrovalve_1" />
+            <PublishBool value="true" topic="/fabricare/electrovalve_2" />
+        </Sequence>
+    </BehaviorTree>
+</root>)");
 
   // Main loop to tick the tree
   rclcpp::spin_some(node);

@@ -104,12 +104,12 @@ public:
 
 
         trajectory_msgs::msg::JointTrajectoryPoint initial_point;
-        initial_point.time_from_start = rclcpp::Duration(1, 0);
+        initial_point.time_from_start = rclcpp::Duration(15, 0);
         initial_point.positions = initial_positions;
         trajectory.joint_trajectory.points.push_back(initial_point);
 
         trajectory_msgs::msg::JointTrajectoryPoint final_point;
-        final_point.time_from_start = rclcpp::Duration(5, 0);
+        final_point.time_from_start = rclcpp::Duration(15, 0);
         final_point.positions = final_positions;
         trajectory.joint_trajectory.points.push_back(final_point);
 
