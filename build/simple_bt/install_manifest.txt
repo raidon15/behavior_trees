@@ -2,3 +2,4 @@
 /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/read_topic
 /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/combined_nodes
 /home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/publish_in_topic
+/home/benjamin/BT_ws/install/simple_bt/lib/simple_bt/fabricare_node

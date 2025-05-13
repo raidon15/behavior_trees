@@ -173,7 +173,7 @@ int main(int argc, char** argv)
     factory.registerNodeType<GenerateAndExecuteTrajectory>("Posicion2", params);
 
     auto tree = factory.createTreeFromFile("/home/benjamin/BT_ws/src/simple_bt/bt_tree.xml");
-    saveTreeToXML(tree, "/home/benjamin/BT_ws/src/simple_bt/bt_tree_saved.xml");
+    //saveTreeToXML(tree, "/home/benjamin/BT_ws/src/simple_bt/bt_tree_saved.xml");
 
     BT::NodeStatus status = BT::NodeStatus::IDLE;
     rclcpp::Rate rate(10);

@@ -249,6 +249,19 @@ publish_in_topic/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_in_topic.dir/build.make CMakeFiles/publish_in_topic.dir/build
 .PHONY : publish_in_topic/fast
 
+#=============================================================================
+# Target rules for targets named fabricare_node
+
+# Build rule for target.
+fabricare_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fabricare_node
+.PHONY : fabricare_node
+
+# fast build rule for target.
+fabricare_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fabricare_node.dir/build.make CMakeFiles/fabricare_node.dir/build
+.PHONY : fabricare_node/fast
+
 src/bt_ros2.o: src/bt_ros2.cpp.o
 .PHONY : src/bt_ros2.o
 
@@ -296,6 +309,30 @@ src/combined_nodes.s: src/combined_nodes.cpp.s
 src/combined_nodes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_nodes.dir/build.make CMakeFiles/combined_nodes.dir/src/combined_nodes.cpp.s
 .PHONY : src/combined_nodes.cpp.s
+
+src/fabricare.o: src/fabricare.cpp.o
+.PHONY : src/fabricare.o
+
+# target to build an object file
+src/fabricare.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fabricare_node.dir/build.make CMakeFiles/fabricare_node.dir/src/fabricare.cpp.o
+.PHONY : src/fabricare.cpp.o
+
+src/fabricare.i: src/fabricare.cpp.i
+.PHONY : src/fabricare.i
+
+# target to preprocess a source file
+src/fabricare.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fabricare_node.dir/build.make CMakeFiles/fabricare_node.dir/src/fabricare.cpp.i
+.PHONY : src/fabricare.cpp.i
+
+src/fabricare.s: src/fabricare.cpp.s
+.PHONY : src/fabricare.s
+
+# target to generate assembly for a file
+src/fabricare.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fabricare_node.dir/build.make CMakeFiles/fabricare_node.dir/src/fabricare.cpp.s
+.PHONY : src/fabricare.cpp.s
 
 src/publish_in_topic.o: src/publish_in_topic.cpp.o
 .PHONY : src/publish_in_topic.o
@@ -362,6 +399,7 @@ help:
 	@echo "... uninstall"
 	@echo "... bt_ros2"
 	@echo "... combined_nodes"
+	@echo "... fabricare_node"
 	@echo "... publish_in_topic"
 	@echo "... read_topic"
 	@echo "... src/bt_ros2.o"
@@ -370,6 +408,9 @@ help:
 	@echo "... src/combined_nodes.o"
 	@echo "... src/combined_nodes.i"
 	@echo "... src/combined_nodes.s"
+	@echo "... src/fabricare.o"
+	@echo "... src/fabricare.i"
+	@echo "... src/fabricare.s"
 	@echo "... src/publish_in_topic.o"
 	@echo "... src/publish_in_topic.i"
 	@echo "... src/publish_in_topic.s"

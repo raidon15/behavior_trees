@@ -22,6 +22,7 @@ add_executable(bt_ros2 src/bt_ros2.cpp)
 add_executable(read_topic src/read_topic.cpp)
 add_executable(combined_nodes src/combined_nodes.cpp)
 add_executable(publish_in_topic src/publish_in_topic.cpp)  # Add publish_in_topic node
+add_executable(fabricare_node src/fabricare.cpp)       # Add fabricare node
 
 # Link dependencies
 ament_target_dependencies(bt_ros2
@@ -53,11 +54,21 @@ ament_target_dependencies(publish_in_topic  # Dependencies for publish_in_topic
   rclcpp
 )
 
+ament_target_dependencies(fabricare_node  # Dependencies for fabricare_node
+  behaviortree_ros2
+  control_msgs
+  std_msgs
+  moveit_msgs
+  trajectory_msgs
+  rclcpp
+)
+
 # Install targets
 install(TARGETS
   bt_ros2
   read_topic
   combined_nodes
-  publish_in_topic  # Install
+  publish_in_topic  # Install publish_in_topic
+  fabricare_node    # Install fabricare_node
   DESTINATION lib/${PROJECT_NAME}
 )

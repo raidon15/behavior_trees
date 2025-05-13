@@ -5,46 +5,56 @@
 class PublishBoolAction : public BT::SyncActionNode
 {
 public:
-  PublishBoolAction(const std::string& name, const BT::NodeConfiguration& config) : BT::SyncActionNode(name, config)
+  PublishBoolAction(const std::string &name, const BT::NodeConfiguration &config) : BT::SyncActionNode(name, config)
   {
-    // Initialize the ROS 2 node and publisher with compatible QoS
+    // Initialize the ROS 2 node
     node_ = rclcpp::Node::make_shared("publish_bool_action_node");
-
-    // Set QoS to match the subscriber's QoS
-    rclcpp::QoS qos(rclcpp::QoSInitialization::from_rmw(rmw_qos_profile_default));
-    qos.durability(rclcpp::DurabilityPolicy::TransientLocal);  // Match Transient Local durability
-
-    publisher_ = node_->create_publisher<std_msgs::msg::Bool>("/fabricare/electrovalve_1", qos);
   }
 
   static BT::PortsList providedPorts()
   {
-    return { BT::InputPort<bool>("value") };
+    return {
+        BT::InputPort<bool>("value"),       // Input for the boolean value
+        BT::InputPort<std::string>("topic") // Input for the topic name
+    };
   }
 
   BT::NodeStatus tick() override
   {
     bool value;
+    std::string topic;
+
+    // Get the "value" input
     if (!getInput<bool>("value", value))
     {
       throw BT::RuntimeError("Missing required input [value]");
     }
 
+    // Get the "topic" input
+    if (!getInput<std::string>("topic", topic))
+    {
+      throw BT::RuntimeError("Missing required input [topic]");
+    }
+
+    // Create the publisher dynamically for the given topic
+    rclcpp::QoS qos(rclcpp::QoSInitialization::from_rmw(rmw_qos_profile_default));
+    qos.durability(rclcpp::DurabilityPolicy::TransientLocal); // Match Transient Local durability
+    auto publisher = node_->create_publisher<std_msgs::msg::Bool>(topic, qos);
+
     // Publish the value to the topic
     std_msgs::msg::Bool msg;
     msg.data = value;
-    publisher_->publish(msg);
+    publisher->publish(msg);
 
-    RCLCPP_INFO(node_->get_logger(), "Published: %s", value ? "true" : "false");
+    RCLCPP_INFO(node_->get_logger(), "Published: %s to topic: %s", value ? "true" : "false", topic.c_str());
     return BT::NodeStatus::SUCCESS;
   }
 
 private:
   rclcpp::Node::SharedPtr node_;
-  rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr publisher_;
 };
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
 
@@ -58,7 +68,7 @@ int main(int argc, char** argv)
       R"(
         <root main_tree_to_execute="MainTree">
             <BehaviorTree ID="MainTree">
-                <PublishBool value="true" />
+                <PublishBool value="false" topic="/fabricare/electrovalve_1" />
             </BehaviorTree>
         </root>
         )");

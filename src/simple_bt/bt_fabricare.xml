@@ -1,0 +1,16 @@
+<root BTCPP_format="4" main_tree_to_execute="MainTree">
+    <BehaviorTree ID="MainTree">
+        <Sequence name="MainSequence">
+            <!-- Read joint states and store positions in the blackboard -->
+            
+
+            <!-- Use the positions from the blackboard as initial_positions -->
+            <Move_to_position  final_positions="[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]" />
+            <PublishBool topic="/fabricare/electrovalve_1" value="true" />
+            <PublishBool topic="/fabricare/electrovalve_2" value="true" />
+            <Move_to_position  final_positions="[0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0]" />
+            <PublishBool topic="/fabricare/electrovalve_1" value="false" />
+            <PublishBool topic="/fabricare/electrovalve_2" value="false" />
+        </Sequence>
+    </BehaviorTree>
+</root>

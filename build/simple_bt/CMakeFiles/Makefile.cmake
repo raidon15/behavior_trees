@@ -968,4 +968,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/read_topic.dir/DependInfo.cmake"
   "CMakeFiles/combined_nodes.dir/DependInfo.cmake"
   "CMakeFiles/publish_in_topic.dir/DependInfo.cmake"
+  "CMakeFiles/fabricare_node.dir/DependInfo.cmake"
   )
