@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/benjamin/BT_ws/build/simple_bt
 all: CMakeFiles/bt_ros2.dir/all
 all: CMakeFiles/read_topic.dir/all
 all: CMakeFiles/combined_nodes.dir/all
+all: CMakeFiles/publish_in_topic.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,6 +79,7 @@ clean: CMakeFiles/simple_bt_uninstall.dir/clean
 clean: CMakeFiles/bt_ros2.dir/clean
 clean: CMakeFiles/read_topic.dir/clean
 clean: CMakeFiles/combined_nodes.dir/clean
+clean: CMakeFiles/publish_in_topic.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -165,7 +167,7 @@ CMakeFiles/bt_ros2.dir/clean:
 CMakeFiles/read_topic.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_topic.dir/build.make CMakeFiles/read_topic.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_topic.dir/build.make CMakeFiles/read_topic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/benjamin/BT_ws/build/simple_bt/CMakeFiles --progress-num=5,6 "Built target read_topic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/benjamin/BT_ws/build/simple_bt/CMakeFiles --progress-num=7,8 "Built target read_topic"
 .PHONY : CMakeFiles/read_topic.dir/all
 
 # Build rule for subdir invocation for target.
@@ -209,6 +211,32 @@ combined_nodes: CMakeFiles/combined_nodes.dir/rule
 CMakeFiles/combined_nodes.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_nodes.dir/build.make CMakeFiles/combined_nodes.dir/clean
 .PHONY : CMakeFiles/combined_nodes.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/publish_in_topic.dir
+
+# All Build rule for target.
+CMakeFiles/publish_in_topic.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_in_topic.dir/build.make CMakeFiles/publish_in_topic.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_in_topic.dir/build.make CMakeFiles/publish_in_topic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/benjamin/BT_ws/build/simple_bt/CMakeFiles --progress-num=5,6 "Built target publish_in_topic"
+.PHONY : CMakeFiles/publish_in_topic.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/publish_in_topic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/benjamin/BT_ws/build/simple_bt/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/publish_in_topic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/benjamin/BT_ws/build/simple_bt/CMakeFiles 0
+.PHONY : CMakeFiles/publish_in_topic.dir/rule
+
+# Convenience name for target.
+publish_in_topic: CMakeFiles/publish_in_topic.dir/rule
+.PHONY : publish_in_topic
+
+# clean rule for target.
+CMakeFiles/publish_in_topic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_in_topic.dir/build.make CMakeFiles/publish_in_topic.dir/clean
+.PHONY : CMakeFiles/publish_in_topic.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

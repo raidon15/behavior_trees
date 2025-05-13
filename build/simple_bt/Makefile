@@ -236,6 +236,19 @@ combined_nodes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_nodes.dir/build.make CMakeFiles/combined_nodes.dir/build
 .PHONY : combined_nodes/fast
 
+#=============================================================================
+# Target rules for targets named publish_in_topic
+
+# Build rule for target.
+publish_in_topic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 publish_in_topic
+.PHONY : publish_in_topic
+
+# fast build rule for target.
+publish_in_topic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_in_topic.dir/build.make CMakeFiles/publish_in_topic.dir/build
+.PHONY : publish_in_topic/fast
+
 src/bt_ros2.o: src/bt_ros2.cpp.o
 .PHONY : src/bt_ros2.o
 
@@ -284,6 +297,30 @@ src/combined_nodes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_nodes.dir/build.make CMakeFiles/combined_nodes.dir/src/combined_nodes.cpp.s
 .PHONY : src/combined_nodes.cpp.s
 
+src/publish_in_topic.o: src/publish_in_topic.cpp.o
+.PHONY : src/publish_in_topic.o
+
+# target to build an object file
+src/publish_in_topic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_in_topic.dir/build.make CMakeFiles/publish_in_topic.dir/src/publish_in_topic.cpp.o
+.PHONY : src/publish_in_topic.cpp.o
+
+src/publish_in_topic.i: src/publish_in_topic.cpp.i
+.PHONY : src/publish_in_topic.i
+
+# target to preprocess a source file
+src/publish_in_topic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_in_topic.dir/build.make CMakeFiles/publish_in_topic.dir/src/publish_in_topic.cpp.i
+.PHONY : src/publish_in_topic.cpp.i
+
+src/publish_in_topic.s: src/publish_in_topic.cpp.s
+.PHONY : src/publish_in_topic.s
+
+# target to generate assembly for a file
+src/publish_in_topic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_in_topic.dir/build.make CMakeFiles/publish_in_topic.dir/src/publish_in_topic.cpp.s
+.PHONY : src/publish_in_topic.cpp.s
+
 src/read_topic.o: src/read_topic.cpp.o
 .PHONY : src/read_topic.o
 
@@ -325,6 +362,7 @@ help:
 	@echo "... uninstall"
 	@echo "... bt_ros2"
 	@echo "... combined_nodes"
+	@echo "... publish_in_topic"
 	@echo "... read_topic"
 	@echo "... src/bt_ros2.o"
 	@echo "... src/bt_ros2.i"
@@ -332,6 +370,9 @@ help:
 	@echo "... src/combined_nodes.o"
 	@echo "... src/combined_nodes.i"
 	@echo "... src/combined_nodes.s"
+	@echo "... src/publish_in_topic.o"
+	@echo "... src/publish_in_topic.i"
+	@echo "... src/publish_in_topic.s"
 	@echo "... src/read_topic.o"
 	@echo "... src/read_topic.i"
 	@echo "... src/read_topic.s"
